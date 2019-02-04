@@ -4,7 +4,7 @@
 		"en": "Secure / Horstmann",
 		"nl": "Secure / Horstmann"
 	},
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"compatibility": ">=1.1.9",
 	"description": {
 		"en": "Secure / Horstmann devices for Homey"
@@ -480,6 +480,33 @@
 			"images": {
 				"large": "/drivers/HRT4ZW/assets/images/large.jpg",
 				"small": "/drivers/HRT4ZW/assets/images/small.jpg"
+			}
+		},
+				{
+			"id": "SSR302",
+			"name": {
+				"en": "SSR302 Boiler control switch ",
+				"nl": "SSR302 ketel schakelaar"
+			},
+			"class": "socket",
+			"capabilities": ["onoff"],
+			"zwave": {
+				"manufacturerId": 89,
+				"productTypeId": 3,
+				"productId": 6,
+				"learnmode": {
+					"instruction": {
+						"en": "Press the Network button.  Full instructions: https://forum.athom.com/discussion/comment/42270/#Comment_42270",
+						"nl": "Druk op de netwerk knop.  Volledige instructies: https://forum.athom.com/discussion/comment/42270/#Comment_42270"
+					}
+				},
+				"associationGroups": [
+					1
+				]
+			},
+			"images": {
+				"large": "/drivers/SSR302/assets/images/large.png",
+				"small": "/drivers/SSR302/assets/images/small.png"
 			}
 		}
 	],
