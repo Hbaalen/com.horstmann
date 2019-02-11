@@ -512,8 +512,8 @@
 							"onoff"
 						],
 						"images": {
-  						"large": "/drivers/SSR302/assets/images/large.jpg",
-  						"small": "/drivers/SSR302/assets/images/small.jpg"
+  						"large": "/drivers/SSR302/assets/images/large.png",
+  						"small": "/drivers/SSR302/assets/images/small.png"
   					},
 						"name": {
 							 "en": "SSR302 Channel 2"
