@@ -492,12 +492,8 @@
 				"onoff"
 			 ],
 		  "zwave": {
-		    "manufacturerId": [
-		      89
-		    ],
-		    "productTypeId": [
-		      3
-		    ],
+		    "manufacturerId": 89,
+		    "productTypeId": 3,
 		    "productId": [
 		      2,6
 		    ],
