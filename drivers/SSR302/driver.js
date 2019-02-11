@@ -1,10 +1,10 @@
+
 'use strict';
 
 const path = require('path');
 const ZwaveDriver = require('homey-zwavedriver');
 
-// http://www.pepper1.net/zwavedb/device/ ??
-// http://products.z-wavealliance.org/products/116
+// path to internet
 
 
 module.exports = new ZwaveDriver(path.basename(__dirname), {
@@ -20,7 +20,7 @@ module.exports = new ZwaveDriver(path.basename(__dirname), {
 			},
 			'command_report': 'SWITCH_BINARY_REPORT',
 			'command_report_parser': report => report['Value'] === 'on/enable'
-		}
+		}		
 	},
 	settings: {}
 });

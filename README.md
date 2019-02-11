@@ -31,6 +31,11 @@ On target change in Homey, Target is updated after wake-up of the Thermostat
 
 
 ##Changelog:
+
+0.1.7
+* SSR302 added 2 channels, and extra Device ID.
+
+
 0.1.6
 * SSR302 added.
 
