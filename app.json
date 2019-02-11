@@ -4,7 +4,7 @@
 		"en": "Secure / Horstmann",
 		"nl": "Secure / Horstmann"
 	},
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"compatibility": ">=1.1.9",
 	"description": {
 		"en": "Secure / Horstmann devices for Homey"
@@ -482,32 +482,51 @@
 				"small": "/drivers/HRT4ZW/assets/images/small.jpg"
 			}
 		},
-				{
+		{
 			"id": "SSR302",
-			"name": {
-				"en": "SSR302 Boiler control switch ",
-				"nl": "SSR302 ketel schakelaar"
+  		"name": {
+    		"en": "Secure SSR302 2ch Zwave Relay Box (Rx)"
 			},
 			"class": "socket",
-			"capabilities": ["onoff"],
-			"zwave": {
-				"manufacturerId": 89,
-				"productTypeId": 3,
-				"productId": 6,
-				"learnmode": {
-					"instruction": {
-						"en": "Press the Network button.  Full instructions: https://forum.athom.com/discussion/comment/42270/#Comment_42270",
-						"nl": "Druk op de netwerk knop.  Volledige instructies: https://forum.athom.com/discussion/comment/42270/#Comment_42270"
+			"capabilities": [
+				"onoff"
+			 ],
+		  "zwave": {
+		    "manufacturerId": [
+		      89
+		    ],
+		    "productTypeId": [
+		      3
+		    ],
+		    "productId": [
+		      2,6
+		    ],
+		    "learnmode": {
+		      "instruction": {
+		        "en": "Press both white buttons together for one second."
+		      }
+		    },
+		    "associationGroups": [
+					1,2,3
+				],
+		    "multiChannelNodes": {
+					"2": {
+						"class": "socket",
+						"capabilities": [
+							"onoff"
+						],
+						"images": {
+  						"large": "/drivers/SSR302/assets/images/large.jpg",
+  						"small": "/drivers/SSR302/assets/images/small.jpg"
+  					},
+						"name": {
+							 "en": "SSR302 Channel 2"
+						},
+						"settings": []
 					}
-				},
-				"associationGroups": [
-					1
-				]
-			},
-			"images": {
-				"large": "/drivers/SSR302/assets/images/large.png",
-				"small": "/drivers/SSR302/assets/images/small.png"
-			}
+		    }
+		  },
+		  "settings": []
 		}
 	],
 	"flow": {
