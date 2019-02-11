@@ -488,41 +488,37 @@
     		"en": "Secure SSR302 2ch Zwave Relay Box (Rx)"
 			},
 			"class": "socket",
-			"capabilities": [
-				"onoff"
-			 ],
-		  "zwave": {
-		    "manufacturerId": 89,
-		    "productTypeId": 3,
-		    "productId": [
-		      2,6
-		    ],
-		    "learnmode": {
-		      "instruction": {
-		        "en": "Press both white buttons together for one second."
-		      }
-		    },
-		    "associationGroups": [
+			"capabilities": ["onoff"],
+			"zwave": {
+				"manufacturerId": 89,
+				"productTypeId": 3,
+				"productId": [
+					2,6
+				],
+				"learnmode": {
+					"instruction": {
+						"en": "Press both white buttons for 1 second"
+					}
+				},
+				"associationGroups": [
 					1,2,3
 				],
-		    "multiChannelNodes": {
+				"multiChannelNodes": {
 					"2": {
 						"class": "socket",
 						"capabilities": [
 							"onoff"
-						],
-						"images": {
-  						"large": "/drivers/SSR302/assets/images/large.png",
-  						"small": "/drivers/SSR302/assets/images/small.png"
-  					},
+						]},
 						"name": {
 							 "en": "SSR302 Channel 2"
 						},
 						"settings": []
 					}
-		    }
-		  },
-		  "settings": []
+				},
+			"images": {
+  				"large": "/drivers/SSR302/assets/images/large.png",
+  				"small": "/drivers/SSR302/assets/images/small.png"
+  			}
 		}
 	],
 	"flow": {
