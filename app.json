@@ -4,8 +4,9 @@
 		"en": "Secure / Horstmann",
 		"nl": "Secure / Horstmann"
 	},
-	"version": "0.1.5",
-	"compatibility": ">=1.1.9",
+	"version": "0.1.6",
+	"sdk": 3,
+	"compatibility": ">=5.0.0",
 	"description": {
 		"en": "Secure / Horstmann devices for Homey"
 	},
